@@ -1,0 +1,25 @@
+footer{
+    padding: 40px 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.nav-2 li{
+    font-size: 1.1em;
+    padding-top: 20px;
+}
+
+.logo-2{
+    display: flex;
+    justify-self: end;
+}
+
+.logo-2 img {
+    width: 100px;
+    height: 100px;
+}
+
+footer p {
+    font-size: .8em;
+    grid-column: span 2;
+}

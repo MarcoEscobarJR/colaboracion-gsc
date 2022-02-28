@@ -1,0 +1,201 @@
+/* SLIDER */
+
+.slider-auto{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.ul-slider{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:flex;
+    width: 400%;
+    animation: sliderCambio 20s infinite alternate linear;
+}
+
+.ul-slider li{
+    width: 100%;
+    position: relative;
+}
+
+.text-slider{
+    font-size: 1.2em;
+    font-weight: normal;
+    position: absolute;
+    top: 55%;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.ul-slider li img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@keyframes sliderCambio{
+
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+    
+}
+
+/* PRODUCTOS DESTACADOS */
+
+section.destacados{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.destacados h2{
+    margin: 40px 0;
+}
+
+    /* GRID DE PRODUCTOS */
+.grid-productos{
+    display: grid;
+    gap: 40px;
+}
+
+.card-producto figure img{
+    width: 100%;
+}
+
+.card-text{
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: .9em;
+
+}
+
+.card-producto{
+    box-shadow: 0 0 4px black;
+}
+
+.boton-card{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.boton-card p{
+    padding: 15px 0;
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton-card p:hover,
+.boton-card p:active{
+    box-shadow: 0 0 4px inset black;
+    transition: .5s;
+}
+
+    /* BOTÓN DE CATÁLOGO */
+
+.boton-catalogo{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    width: 230px;
+    margin: 40px auto;
+}
+
+
+.boton-catalogo a{
+    display: block;
+    padding: 20px 0;
+}
+
+.boton-catalogo a:hover,
+.boton-catalogo a:active{
+    background-color: #113461;
+    color: #fff;
+    transition: 1s;
+}
+
+/* SOBRE NOSOTROS */
+
+#sob-nos{
+    color: #113461;
+    box-shadow: 0 0 4px black;
+    background-color: #fff;
+    display: grid;
+}
+
+.sob-nos-text{
+    position: relative;
+}
+
+.sob-nos-img{
+    background-image: url(../../img/index/sob-nos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sob-nos-video{
+    
+    position: relative;
+    padding: 30%;
+}
+.sob-nos-video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* CONTÁCTO */
+
+#contacto{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.grid-contacto{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card-contacto{
+    box-shadow: 0 0 4px black;
+}
+
+.grid-contact-text{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.tel-img,
+.mail-img,
+.ubicacion-img{
+        display: inline-block;
+        margin-right: 5px;
+}
+
+.grid-contact-map{
+    overflow: hidden;
+}
+
+.grid-contact-map iframe{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+}

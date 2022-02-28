@@ -1,0 +1,86 @@
+/* SLIDER */
+@media screen and (min-width: 789px) and (max-width:999px) {
+
+
+.slider-auto{
+    max-height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width:788px) {
+
+    .slider-auto{
+        max-height: 300px;
+        }
+    
+    }
+
+
+/* MEDIUM INDEX */
+
+@media screen and (min-width: 600px) and (max-width:999px) {
+/* SLIDER */
+
+.slider-container{
+    bottom: 0;
+    }
+
+
+.slider-text h1,
+.slider-text p{
+    bottom: 30px;
+    left: 100px;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.card-producto{
+    display: grid;
+    grid-template-areas: 'img text'
+                         'img text'
+                         'img boton';
+}
+
+.card-imagen{
+    grid-area: img;
+    overflow: hidden;
+}
+
+.card-imagen img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text{
+    grid-area: text;
+}
+.boton-card{
+    grid-area: boton;
+}
+
+/* SOBRE NOSOTROS */ 
+
+#sob-nos{
+    grid-template-columns: 60% 40%;
+}
+
+.sob-nos-text{
+    padding: 20px;
+}
+
+.sob-nos-text p{
+    line-height: 200%;
+}
+
+.sob-nos-video{
+    grid-column: span 2;
+}
+
+/* CONTÁCTO */
+
+.grid-contact-map{
+    height: 400px;
+}
+
+}

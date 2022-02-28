@@ -1,0 +1,32 @@
+@media (min-width: 1000px) {
+
+.no-display-great,
+#nav-1 ul li.no-display-great{
+    display: none;
+}
+
+header{
+    padding: 15px 20px;
+}
+
+/* LOGO */
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* NAV */
+
+#nav-1 ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+}

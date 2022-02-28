@@ -1,0 +1,27 @@
+@media screen and (max-width: 999px) {
+
+    .slider-auto{
+        height: 400px;
+    } 
+
+}
+
+@media screen and (max-width: 874px) {
+
+    .slider-auto{
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 764px) {
+    .slider-auto{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .slider-auto{
+        height: 250px;
+    }
+}

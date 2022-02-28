@@ -1,0 +1,85 @@
+@media (max-width: 600px) {
+
+/* SLIDER */
+.slider-auto{
+        max-height: 250px;
+        bottom: 0;
+        }
+
+.slider-text h1,
+.slider-text p{
+            bottom: 30px;
+            left: 20px;
+            font-size: 1.2em;
+}
+
+/* SOBRE NOSOTROS */
+
+
+
+.sob-nos-text{
+    padding: 20px; 
+    color: #fff;
+    text-align: center;
+    background-image: url(../../img/index/sob-nos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sob-nos-opacidad::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .65;
+}
+
+.sob-nos-text p,
+.sob-nos-text h2{
+    line-height: 200%;
+    position: relative;
+}
+
+/* CONTÁCTO */
+
+.grid-contacto{
+    grid-template-columns: 1fr;
+}
+
+.grid-contact-map{
+    height: 400px;
+
+}
+
+
+}
+
+/* SLIDER INICIO*/
+
+@media (max-width: 486px) {
+
+    .slider-auto{
+        max-height: 200px;
+        }
+
+}
+
+@media (max-width: 390px) {
+
+    .slider-auto{
+        max-height: 120px;
+        }
+}
+
+
+@media (max-width: 294px) {
+
+    .slider-auto{
+        max-height: 100px;
+        }
+}

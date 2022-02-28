@@ -1,0 +1,49 @@
+@media (min-width: 1000px) {
+
+/* SLIDER */
+
+.slider-text h1,
+.slider-text p{
+    bottom: 30px;
+    left: 100px;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+
+
+.grid-productos{
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* SOBRE NOSOTROS */ 
+
+#sob-nos{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.sob-nos-text{
+    padding: 20px;
+}
+
+.sob-nos-text p{
+    line-height: 250%;
+}
+
+.sob-nos-video{
+    grid-column: span 2;
+}
+
+
+/* CONTÁCTO */
+
+
+.grid-contacto{
+    gap: 200px;
+}
+
+.grid-contact-map{
+    height: 500px;
+}
+
+}

@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* CLASES */
+
+.m-0{margin: 0;}
+
+.inherit{
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+.blanco{
+  color: #fff;
+}
+
+.azul{
+  color: #113461;
+}
+
+.b-azul{
+  background-color: #113461;
+}
+
+.b-blanco{
+  background-color: #fff;
+}
+
+/* ETIQUETAS */
+
+ul{
+  list-style-type: none;
+}
+body{
+ background:  linear-gradient(to bottom, #f0f0f0 93%, #113461);
+}
+
+iframe{
+  border: 0;
+}
+
+h2{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fuentes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+.open-sans{
+  font-family: 'Open Sans';
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fuentes/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+.roboto{
+  font-family: Roboto;
+}

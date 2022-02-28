@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+
+    footer{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .nav-2 ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo-2{
+        display: flex;
+        justify-self: center;
+    }
+
+    footer p{
+        grid-column: span 1;
+    }
+}
