@@ -11,21 +11,28 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'auto-fuentes' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'auto-fuentes' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'auto-fuentes' ), 'auto-fuentes', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<!--INICIO FOOTER-->
+        <footer class="b-azul blanco open-sans">
+
+            <nav class="nav-2">
+
+                <ul>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html" class="nav-a">Inicio</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/catalogo.html" class="nav-a">Catálogo</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#sob-nos" class="nav-a">Quiénes Somos</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#contacto" class="nav-a">Contáctanos</a></li>
+                </ul>
+
+            </nav>
+
+            <figure class="logo-2">
+                <img src="<?php echo get_template_directory_uri();?>/img/footer/logo.svg" alt="Logo">
+            </figure>
+
+            <p class="in-ad-footer text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        </footer>
+        <!--FIN FOOTER-->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

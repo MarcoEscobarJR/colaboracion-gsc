@@ -25,35 +25,35 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'auto-fuentes' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$auto_fuentes_description = get_bloginfo( 'description', 'display' );
-			if ( $auto_fuentes_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $auto_fuentes_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	 <!--INICIO HEADER-->
+        <header class="open-sans">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'auto-fuentes' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+            <!--LOGO-->
+            <div class="logo">
+                <a href="<?php echo get_template_directory_uri();?>/index.html">
+                    <picture class="logo">
+                        <img loading="lazy"  itemprop="logo" src="<?php echo get_template_directory_uri();?>/img/header/logo.svg" alt="Logo de empresa Automotríz fuentes: Click aquí para ir a inicio">
+                    </picture>
+                </a>
+            </div>
+
+            <!--NAV-->
+            <nav id="nav-1" class="no-display-medium no-display-mini">
+
+                <ul>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html" class="nav-a">Inicio</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/catalogo.html" class="nav-a">Catálogo</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#sob-nos" class="nav-a">Quiénes Somos</a></li>
+                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#contacto" class="nav-a">Contáctanos</a></li>
+                    <li class="no-display-great li-cerrar">Cerrar Menú</li>
+                </ul>
+
+            </nav>
+
+            <!--BOTÓN MENÚ-->
+            <picture class="no-display-great picture-menu img-menu">
+                    <img src="<?php echo get_template_directory_uri();?>/img/header/menu.svg" alt="Abrir menú" loading="lazy">
+            </picture>
+
+        </header>
+        <!--FIN HEADER-->
