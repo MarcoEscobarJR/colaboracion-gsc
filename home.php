@@ -34,13 +34,16 @@
 
                 <!-- PRODUCTOS -->
                 <div class="grid-productos">
-
+                <?php   while ( have_posts() ) : the_post(); ?>
                     <!-- INICIO CARD -->
                     <article class="producto-card b-azul blanco" data-category="tipo-1">
                     <div itemscope itemtype = "https://schema.org/Product" >  
 
                         <figure class="m-0 contenedor-img">
-                            <img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/tipo-1.jpg" alt="" itemprop = "image">
+                            <!-- <img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/tipo-1.jpg" alt="" itemprop = "image"> -->
+                            <?php if(has_post_thumbnail()){
+                                the_post_thumbnail('medium');
+                            } ?>
                         </figure>
 
                         <h2 class="open-sans p5"><span itemprop = "name" >Nombre del producto</span></h2>
@@ -61,83 +64,7 @@
                     </article>
                     <!-- FIN CARD -->
 
-                    <!-- INICIO CARD -->
-                    <article class="producto-card b-azul blanco" data-category="tipo-2">
-                        <div itemscope itemtype = "https://schema.org/Product" >  
-    
-                            <figure class="m-0 contenedor-img">
-                                <img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/tipo-2.jpg" alt="" itemprop = "image">
-                            </figure>
-    
-                            <h2 class="open-sans p5"><span itemprop = "name" >Nombre del producto</span></h2>
-    
-                            <p class="card-precio roboto p5">Precio</p>
-    
-                            <p class="descripcion-corta roboto p5">
-                                <span itemprop="description">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta repudiandae. Voluptatum tenetur neque sunt quos libero quod numquam consequatur aut, asperiores dolorum cum eaque accusamus harum? Magni, dicta assumenda.
-                                </span>
-                            </p>
-    
-                            <div class="boton-card">
-                                <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php echo get_template_directory_uri() ;?>/item.html" class="inherit">Ver más</a></p>
-                            </div>
-    
-                        </div>
-                    </article>
-                    <!-- FIN CARD -->
-
-                    <!-- INICIO CARD -->
-                    <article class="producto-card b-azul blanco" data-category="tipo-3">
-                        <div itemscope itemtype = "https://schema.org/Product" >  
-    
-                            <figure class="m-0 contenedor-img">
-                                <img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/tipo-3.jpg" alt="" itemprop = "image">
-                            </figure>
-    
-                            <h2 class="open-sans p5"><span itemprop = "name" >Nombre del producto</span></h2>
-    
-                            <p class="card-precio roboto p5">Precio</p>
-    
-                            <p class="descripcion-corta roboto p5">
-                                <span itemprop="description">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta repudiandae. Voluptatum tenetur neque sunt quos libero quod numquam consequatur aut, asperiores dolorum cum eaque accusamus harum? Magni, dicta assumenda.
-                                </span>
-                            </p>
-    
-                            <div class="boton-card">
-                                <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php echo get_template_directory_uri() ;?>/item.html" class="inherit">Ver más</a></p>
-                            </div>
-    
-                        </div>
-                    </article>
-                    <!-- FIN CARD -->
-
-                    <!-- INICIO CARD -->
-                    <article class="producto-card b-azul blanco" data-category="tipo-4">
-                        <div itemscope itemtype = "https://schema.org/Product" >  
-    
-                            <figure class="m-0 contenedor-img">
-                                <img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/tipo-4.jpg" alt="" itemprop = "image">
-                            </figure>
-    
-                            <h2 class="open-sans p5"><span itemprop = "name" >Nombre del producto</span></h2>
-    
-                            <p class="card-precio roboto p5">Precio</p>
-    
-                            <p class="descripcion-corta roboto p5">
-                                <span itemprop="description">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta repudiandae. Voluptatum tenetur neque sunt quos libero quod numquam consequatur aut, asperiores dolorum cum eaque accusamus harum? Magni, dicta assumenda.
-                                </span>
-                            </p>
-    
-                            <div class="boton-card">
-                                <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php echo get_template_directory_uri() ;?>/item.html" class="inherit">Ver más</a></p>
-                            </div>
-    
-                        </div>
-                    </article>
-                    <!-- FIN CARD -->
+                <?php endwhile; // End of the loop. ?>
 
 
                 </div>

@@ -127,7 +127,8 @@ input[type="radio"]{
 
 .producto-card .contenedor-img img{
     width: 100%;
-    height: auto;
+    height: 204px;
+    object-fit: cover;
 }
 
 
