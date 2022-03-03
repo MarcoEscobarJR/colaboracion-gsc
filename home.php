@@ -46,18 +46,22 @@
                             } ?>
                         </figure>
 
-                        <h2 class="open-sans p5"><span itemprop = "name" >Nombre del producto</span></h2>
+                        <h2 class="open-sans p5"><span itemprop = "name" ><?php the_title(); ?></span></h2>
 
                         <p class="card-precio roboto p5">Precio</p>
 
                         <p class="descripcion-corta roboto p5">
                             <span itemprop="description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta repudiandae. Voluptatum tenetur neque sunt quos libero quod numquam consequatur aut, asperiores dolorum cum eaque accusamus harum? Magni, dicta assumenda.
+                                <?php the_excerpt(); ?>
+                            </span>
+                            <span style="display:none;">
+                                <?php the_content(); ?>
+                                
                             </span>
                         </p>
 
                         <div class="boton-card">
-                            <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php echo get_template_directory_uri() ;?>/item.html" class="inherit">Ver más</a></p>
+                            <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php the_permalink(); ?>" class="inherit">Ver más</a></p>
                         </div>
 
                     </div>
@@ -73,4 +77,13 @@
         </main>
         <!--FIN MAIN-->    
     </div>
+    <script>
+        let price = document.querySelectorAll(".article-price");
+        let priceBox = document.querySelectorAll(".card-precio");
+
+        for (let index = 0; index < priceBox.length; index++) {
+            const element = priceBox[index];
+            element.textContent = price[index].textContent;
+        }
+    </script>
 <?php get_footer(); ?>
