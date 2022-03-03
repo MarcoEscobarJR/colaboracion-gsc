@@ -48,7 +48,7 @@
 
                         <h2 class="open-sans p5"><span itemprop = "name" ><?php the_title(); ?></span></h2>
 
-                        <p class="card-precio roboto p5">Precio</p>
+                        <p class="card-precio roboto p5">Cargando precio...</p>
 
                         <p class="descripcion-corta roboto p5">
                             <span itemprop="description">
@@ -56,7 +56,9 @@
                             </span>
                             <span style="display:none;">
                                 <?php the_content(); ?>
-                                
+                                <span class="descripcion-categoria">
+                                    <?php the_category("-"); ?>
+                                </span>
                             </span>
                         </p>
 
@@ -77,13 +79,5 @@
         </main>
         <!--FIN MAIN-->    
     </div>
-    <script>
-        let price = document.querySelectorAll(".article-price");
-        let priceBox = document.querySelectorAll(".card-precio");
-
-        for (let index = 0; index < priceBox.length; index++) {
-            const element = priceBox[index];
-            element.textContent = price[index].textContent;
-        }
-    </script>
 <?php get_footer(); ?>
+<script src="<?php echo get_template_directory_uri();?>/js/home/article.js"></script>
