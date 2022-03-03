@@ -61,7 +61,7 @@
                         </p>
 
                         <div class="boton-card">
-                            <p class="text-center azul m-0 open-sans b-blanco"><a src="<?php the_permalink(); ?>" class="inherit">Ver más</a></p>
+                            <p class="text-center azul m-0 open-sans b-blanco"><a href="<?php the_permalink(); ?>" class="inherit">Ver más</a></p>
                         </div>
 
                     </div>
