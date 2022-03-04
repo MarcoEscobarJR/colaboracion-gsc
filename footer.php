@@ -25,9 +25,15 @@
 
             </nav>
 
-            <figure class="logo-2">
-                <img src="<?php echo get_template_directory_uri();?>/img/footer/logo.svg" alt="Logo">
-            </figure>
+            <picture class="logo">
+                <?php
+                    if(has_custom_logo()){
+                        the_custom_logo();
+                    }else{
+                        ?>   <img loading="lazy"  itemprop="logo" src="<?php echo get_template_directory_uri();?>/img/header/logo.svg" alt="Logo de empresa Automotríz fuentes: Click aquí para ir a inicio">  <?php
+                    }
+                ?>
+            </picture>
 
             <p class="in-ad-footer text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 

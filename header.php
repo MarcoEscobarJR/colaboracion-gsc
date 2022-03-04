@@ -31,7 +31,13 @@
             <div class="logo">
                 <a href="<?php echo get_template_directory_uri();?>/index.html">
                     <picture class="logo">
-                        <img loading="lazy"  itemprop="logo" src="<?php echo get_template_directory_uri();?>/img/header/logo.svg" alt="Logo de empresa Automotríz fuentes: Click aquí para ir a inicio">
+                       <?php
+                         if(has_custom_logo()){
+                            the_custom_logo();
+                         }else{
+                             ?>   <img loading="lazy"  itemprop="logo" src="<?php echo get_template_directory_uri();?>/img/header/logo.svg" alt="Logo de empresa Automotríz fuentes: Click aquí para ir a inicio">  <?php
+                         }
+                       ?>
                     </picture>
                 </a>
             </div>
