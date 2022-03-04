@@ -43,7 +43,8 @@ header{
 /* FIN DE ANIMACIÓN */
 
 .nav-a,
-#nav-1 li{
+#nav-1 li,
+.nav-a:visited {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
