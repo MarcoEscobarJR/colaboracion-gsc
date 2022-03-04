@@ -3,16 +3,10 @@
         <!--MAIN-->
         <main>
 
-            <!--INICIO SLIDER -->
-            <section class="slider-auto">
-                <ul class="ul-slider">
-                    <li><img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/slider.jpg" alt=""></li>
-                    <li><img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/slider2.jpg" alt=""></li>
-                    <li><img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/slider3.jpg" alt=""></li>
-                    <li><img src="<?php echo get_template_directory_uri() ;?>/img/catalogo/slider4.jpg" alt=""></li>
-                </ul>
-            </section>
-            <!-- FIN SLIDER -->
+            <?php 
+                $carpet = 'catalogo';
+                include 'hero.php'; 
+            ?>
 
             <!-- INICIO FILTRO DE CATEGORÍAS -->
                 <!-- FILTRO -->
