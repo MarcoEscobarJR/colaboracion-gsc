@@ -35,7 +35,7 @@
                 ?>
             </picture>
 
-            <p class="in-ad-footer text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="in-ad-footer text-center"><?php bloginfo('title'); ?> &copy; Todos los derechos reservados.</p>
 
         </footer>
         <!--FIN FOOTER-->
