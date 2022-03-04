@@ -50,17 +50,17 @@
 
                         <p class="card-precio roboto p5">Cargando precio...</p>
 
-                        <p class="descripcion-corta roboto p5">
-                            <span itemprop="description">
-                                <?php the_excerpt(); ?>
-                            </span>
+                        <div class="descripcion-corta roboto p5">
+                     
+                            <?php the_excerpt(); ?>
+                            
                             <span style="display:none;">
                                 <?php the_content(); ?>
                                 <span class="descripcion-categoria">
                                     <?php the_category("-"); ?>
                                 </span>
                             </span>
-                        </p>
+                        </div>
 
                         <div class="boton-card">
                             <p class="text-center azul m-0 open-sans b-blanco"><a href="<?php the_permalink(); ?>" class="inherit">Ver más</a></p>
