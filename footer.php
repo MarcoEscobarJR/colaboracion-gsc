@@ -17,10 +17,10 @@
             <nav class="nav-2">
 
                 <ul>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html" class="nav-a">Inicio</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/catalogo.html" class="nav-a">Catálogo</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#sob-nos" class="nav-a">Quiénes Somos</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#contacto" class="nav-a">Contáctanos</a></li>
+                   <li><a href="<?php bloginfo('url');?>" class="nav-a">Inicio</a></li>
+                    <li><a href="<?php bloginfo('url');?>/catalogo" class="nav-a">Catálogo</a></li>
+                    <li><a href="<?php bloginfo('url');?>#sob-nos" class="nav-a">Quiénes Somos</a></li>
+                    <li><a href="<?php bloginfo('url');?>#contacto" class="nav-a">Contáctanos</a></li>
                 </ul>
 
             </nav>
