@@ -24,7 +24,6 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'auto-fuentes' ); ?></a>
-
 	 <!--INICIO HEADER-->
         <header class="open-sans">
 
@@ -41,10 +40,10 @@
             <nav id="nav-1" class="no-display-medium no-display-mini">
 
                 <ul>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html" class="nav-a">Inicio</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/catalogo.html" class="nav-a">Catálogo</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#sob-nos" class="nav-a">Quiénes Somos</a></li>
-                    <li><a href="<?php echo get_template_directory_uri();?>/index.html#contacto" class="nav-a">Contáctanos</a></li>
+                    <li><a href="<?php bloginfo('url');?>" class="nav-a">Inicio</a></li>
+                    <li><a href="<?php bloginfo('url');?>/catalogo" class="nav-a">Catálogo</a></li>
+                    <li><a href="<?php bloginfo('url');?>#sob-nos" class="nav-a">Quiénes Somos</a></li>
+                    <li><a href="<?php bloginfo('url');?>#contacto" class="nav-a">Contáctanos</a></li>
                     <li class="no-display-great li-cerrar">Cerrar Menú</li>
                 </ul>
 
