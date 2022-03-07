@@ -217,3 +217,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Funciones personalizadas
+
+function verificar_datos_contacto($dato,$defaut){
+      if(strlen($dato) > 1){
+            $res = $dato;
+        }else{
+            $res = $defaut;
+        }
+      return $res;
+  }

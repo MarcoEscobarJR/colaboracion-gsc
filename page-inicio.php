@@ -153,18 +153,10 @@ get_header();
                         <div class="card-contacto b-azul" itemscope itemtype = "https://schema.org/LocalBusiness" >
                             <!-- INICIO GRID TEXTO -->
                             <div class="grid-contact-text blanco roboto">
-                                <div class="tel">
-                                    <div class="tel-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/img/index/tel.svg" alt="teléfono ícono">
-                                    </div>
-                                    <a href="tel:56999999999" class="inherit tel-text"><span itemprop = "telephone" >+569 99999999</span></a>
-                                </div>
-                                <div class="mail">
-                                    <div class="mail-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/img/index/mail.svg" alt="mail ícono">
-                                    </div>
-                                    <a href="mailto:contacto@dominio.cl" class="inherit mail-text"><span itemprop="email">contacto@dominio.cl</span></a>
-                                </div>
+                                <?php  
+                                    $carpet_contacto = 'index'; 
+                                    require 'dato-contacto.php'; 
+                                ?>
                                 <div class="ubicacion" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                                     <div class="ubicacion-img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/index/ubicacion.svg" alt="ubicacion ícono">
@@ -188,18 +180,7 @@ get_header();
                         <div class="card-contacto b-azul" itemscope itemtype = "https://schema.org/LocalBusiness" >
                             <!-- INICIO GRID TEXTO -->
                             <div class="grid-contact-text blanco roboto">
-                                <div class="tel">
-                                    <div class="tel-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/img/index/tel.svg" alt="teléfono ícono">
-                                    </div>
-                                    <a href="tel:56999999999" class="inherit tel-text"><span itemprop = "telephone" >+569 99999999</span></a>
-                                </div>
-                                <div class="mail">
-                                    <div class="mail-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/img/index/mail.svg" alt="mail ícono">
-                                    </div>
-                                    <a href="mailto:contacto@dominio.cl" class="inherit mail-text"><span itemprop="email">contacto@dominio.cl</span></a>
-                                </div>
+                                <?php require 'dato-contacto.php';?>
                                 <div class="ubicacion" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                                     <div class="ubicacion-img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/index/ubicacion.svg" alt="ubicacion ícono">

@@ -30,19 +30,10 @@ get_header();
 					<?php the_content(); ?>
                 </div>
 
-                <div class="tel open-sans">
-                    <div class="tel-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/item/telefono.svg" alt="teléfono ícono">
-                    </div>
-                    <a href="tel:56999999999" class="inherit tel-text"><span itemprop = "telephone" >+569 99999999</span></a>
-                </div>
-
-                <div class="mail open-sans">
-                    <div class="mail-img" style="height: 30px; overflow: hidden;">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/item/mail.svg" alt="mail ícono">
-                    </div>
-                    <a href="mailto:contacto@dominio.cl" class="inherit mail-text"><span itemprop="email">contacto@dominio.cl</span></a>
-                </div>
+                <?php
+					$carpet_contacto = 'item'; 
+					require_once "dato-contacto.php"; 
+				?>
 
             </section>
 			<section class="texto-articulo">
