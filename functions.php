@@ -182,6 +182,7 @@ function auto_fuentes_scripts() {
 	/* JavaScript perzonalizado */
 	wp_enqueue_script( 'header-menu', get_template_directory_uri() . '/js/header/menu.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
 	/* Fin JavaScript perzonalizado */
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

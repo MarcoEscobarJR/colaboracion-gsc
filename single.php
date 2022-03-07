@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main single-page">
 		<?php
 		while ( have_posts() ) : the_post(); ?>
 			<picture class="single-image">
@@ -26,7 +26,7 @@ get_header();
                 <div itemscope itemtype = "https://schema.org/Product" > 
                     <h2 class="open-sans"><span itemprop = "name" ><?php the_title(); ?></span></h2>
 
-                    <p class="open-sans">Precio</p>
+                    <p class="open-sans price-single">Precio</p>
 					<?php the_content(); ?>
                 </div>
 
