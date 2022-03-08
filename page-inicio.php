@@ -117,7 +117,7 @@ get_header();
                     <!--FIN GRID PRODUCTOS-->
 
                 <div class="boton-catalogo open-sans azul b-blanco text-center">
-                    <a href="" class="inherit">Ver Catálogo Completo</a>
+                    <a href="<?php bloginfo('url')?>/catalogo" class="inherit">Ver Catálogo Completo</a>
                 </div>
 
             </section>
