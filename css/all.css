@@ -74,3 +74,20 @@ h2{
 .roboto{
   font-family: Roboto;
 }
+
+
+#page header,
+#page main,
+#page footer{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+figure a{
+  transition:.1s ease-in-out;
+}
+
+figure a:hover{
+  transform:scale(.99);
+  outline: 3px solid #113461;
+}
